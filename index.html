@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 3</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
 </head>
 <body>
     <nav>
-        <p><a href="usa.generation.org">Generation</a></p>
-        <p><a href="codecademy.com" target="_blank">Codecademy</a></p>
+        <p><a href="usa.generation.org">Generation</a>
+        <a href="codecademy.com" target="_blank">Codecademy</a>
+        <a href="#footer">Credits</a></p>
 
     </nav>
     <main>
@@ -17,18 +24,65 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas recusandae numquam asperiores quisquam, placeat reiciendis perferendis iste vel distinctio soluta nemo quod id, consequuntur quo fugit. Earum, voluptate commodi? Veniam.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, atque sit illum placeat non quis, possimus officiis incidunt voluptates, voluptatibus repellendus neque illo quod assumenda rerum quo aliquam enim! Ullam!</p>
         <h2>Members</h2>
-        <table>
+        <table style="width:100%">
             <tr>
-            <th scope="cols">Members</th>
-            <th scope="cols">Role</th>
+              <th>Firstname</th>
+              <th>Lastname</th> 
+              <th>Age</th>
             </tr>
             <tr>
-            <td>Joseph</td>
+              <td>Joseph</td>
+              <td>Gonzales</td>
+              <td>25</td>
             </tr>
-            <tr></tr>
-            <td>Reggie</td>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>42</td>
             </tr>
-        </table>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right" >Total:</td>
+                <td>174</td>
+            </tr>
+          </table>
+          <br>
+          <form>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text">
+            <label for="pword">Password</label>
+            <input name="pword" id="pword" type="password">
+            <br><br>
+            <label for="age">Age</label>
+            <input name="age" id="age" type="number">
+            <br><br>
+            <label for="cars">Choose a color:</label>
+
+            <select name="cars" id="cars">
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+            </select>
+          </form>
+          <figure>
+            <img src="https://images.thestar.com/0z3C0EeL-14Go0pG60CxDCx6cjY=/1086x688/smart/filters:cb(2700061000)/https://www.thespec.com/content/dam/thespec/opinion/columnists/2018/02/04/age-is-just-a-number-until-you-don-t-know-what-it-is/B8841171Z.1_20180202091448_000_G562PQQH.2-0_Gallery.jpg" alt="Number Candles" width="50%">
+            <figcaption>Age is just a Number</figcaption>
+          </figure>
     </main>
 </body>
+<footer>
+    <h4>Created by:</h4>
+    <ul>
+        <li>Joseph Gonzales</li>
+        <li>Ivana</li>
+        <li></li>
+    </ul>
+
+</footer>
 </html>
